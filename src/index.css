@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .h-3 {
+    height: 3px;
+  }
+  .w-40 {
+    width: 40px;
+  }
+  .my-8px {
+    margin: 8px;
+  }
+}
+
+.navbar {
+  animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  width: 100%;
+}
+
+.header-title {
+  padding-top: 15vh;
+  margin: 0 4rem;
+}
+
+.ital {
+  animation: .3s slideInFromLeft ease 2s forwards;
+  font-size: 3.5rem;
+  font-style: italic;
+  font-family: Garamond, sans-serif;
+  
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sans {
+  font-size: 3.5rem;
+  font-style: bold;
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: .8;
+   }
+}
